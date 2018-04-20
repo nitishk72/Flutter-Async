@@ -40,6 +40,7 @@ class AppState extends State<AppName>{
         body: new Container(
           padding: EdgeInsets.all(12.0),
           child: new Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               new Padding(padding: EdgeInsets.only(bottom: 10.0)),
               new TextField(
@@ -52,11 +53,11 @@ class AppState extends State<AppName>{
                   child: new Text("Get Info")
               ),
               new Padding(padding: EdgeInsets.only(bottom: 20.0)),
-              new Text("Name : $name"),
+              new Text("ID : $id",style: TextStyle(fontSize: 20.0),),
               new Padding(padding: EdgeInsets.only(bottom: 10.0)),
-              new Text("ID : $id"),
+              new Text("Name : $name",style: TextStyle(fontSize: 22.0),),
               new Padding(padding: EdgeInsets.only(bottom: 10.0)),
-              new Text("Public repo : $public_repos"),
+              new Text("Public repo : $public_repos",style: TextStyle(fontSize: 20.0),),
             ],
           ),
         ),
